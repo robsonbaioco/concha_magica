@@ -1,3 +1,22 @@
+<?php
+	$answers = array(
+		'sim',
+		'não',
+		'tente novamente mais tarde',
+		'nada',
+		'vá em frente',
+		'nunca',
+		'jamais',
+		'com certeza',
+		'talvez',
+		'não quero',
+		
+	);
+	if ($_POST) {
+		$answer = $answers[array_rand($answers)];
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +41,7 @@
 						<input type="" name="question" placeholder="Make a question to the Magic Shell">
 						<button class="Button">Ask</button>
 					</div>
+					<p><?=$answer ?? '' ?></p>
 				</div>
 			</form>
 		</div>
