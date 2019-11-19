@@ -18,6 +18,7 @@
 	}
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,15 +35,16 @@
 	<div class="container">
 
 		<div class="content">		
-			<h3>Concha mágica</h3>	
+
+			<img class="concha" src="images/concha.png">
 
 			<form action="#" class="Form" method="POST">
 				<div class="form-item">
 					<div class="_append">
-						<input type="" name="question" value="<?=$question ?? '' ?>" placeholder="Make a question to the Magic Shell">
+						<input type="" name="question" value="<?= isset($question) ? $question : '' ?>" placeholder="Make a question to the Magic Shell">
 						<button class="Button">Ask</button>
 					</div>
-					<p><?=$answer ?? '' ?></p>
+					<p><?= isset($answer) ? $answer : '' ?></p>
 				</div>
 			</form>
 		</div>
