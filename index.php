@@ -14,6 +14,7 @@
 	);
 	if ($_POST) {
 		$answer = $answers[array_rand($answers)];
+		$question = $_POST['question'];
 	}
 
 ?>
@@ -38,7 +39,7 @@
 			<form action="#" class="Form" method="POST">
 				<div class="form-item">
 					<div class="_append">
-						<input type="" name="question" placeholder="Make a question to the Magic Shell">
+						<input type="" name="question" value="<?=$question ?? '' ?>" placeholder="Make a question to the Magic Shell">
 						<button class="Button">Ask</button>
 					</div>
 					<p><?=$answer ?? '' ?></p>
