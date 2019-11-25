@@ -30,12 +30,11 @@
 	<link rel="stylesheet" type="text/css" href="css/libs/monalisa.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url(images/bg.png)">
 
 	<div class="container">
 
 		<div class="content">		
-
 			<img class="concha" src="images/concha.png">
 
 			<form action="#" class="Form" method="POST">
@@ -44,13 +43,14 @@
 						<input type="" name="question" value="<?= isset($question) ? $question : '' ?>" placeholder="Make a question to the Magic Shell">
 						<button class="Button">Ask</button>
 					</div>
-					<p><?= isset($answer) ? $answer : '' ?></p>
+					<p class="answer wow fadeIn"><?= isset($answer) ? $answer : '' ?></p>
 				</div>
 			</form>
 		</div>
 	</div>
 
 	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/wow.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

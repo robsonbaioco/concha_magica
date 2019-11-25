@@ -4,11 +4,14 @@
 	width: 90%;
 }
 
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 .content {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin: 150px auto;
 	width: 500px;
 }
 
@@ -25,8 +28,24 @@
 	background-color: #ba87c4;
 }
 
+.answer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 10px;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 50px;
+}
+
 @media only screen and (max-width: 768px) {
  	.content {
  		width: 90%;
+ 	}
+
+ 	.concha {
+ 		max-width: 250px;
  	}
 }

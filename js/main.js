@@ -6,5 +6,10 @@ $(function() {
     })
     .done(function() {
         console.log("success");
-    })
+    });
+
+    // wow
+    new WOW({
+        offset: 300
+    }).init();
 });
