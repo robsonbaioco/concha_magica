@@ -17,7 +17,7 @@ $(function() {
         event.preventDefault();
         var answer = answers[Math.floor(answers.length * Math.random())];
         console.log(answer);
-        $('.answer').text(answer);
+        $('.answer_').text(answer);
       });
 });
 
