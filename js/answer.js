@@ -1,5 +1,5 @@
-<?php
-	$answers = array(
+
+	var answers = array(
 		'sim',
 		'não',
 		'tente novamente mais tarde',
@@ -13,6 +13,4 @@
 		
 	);
 	
-	$answer = $answers[array_rand($answers)];
-		
-    return json_encode($answer);
+	
