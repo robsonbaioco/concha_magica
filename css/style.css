@@ -28,15 +28,15 @@ body {
 	position: absolute;
     top: 54px;
     right: 70px;
-    max-width: 30px;
+    width: 30px;
 }
 
 .pino .linha {
 	display: block;
 	position: absolute;
-	right: 17px;
-	top: 43px;
-	width: 60px;
+	left: -81px;
+    top: 56px;
+    width: 100px;
 	height: 2px;
 	background: #fff;
 	transform: rotate(-45deg);
@@ -68,7 +68,7 @@ body {
  		width: 90%;
  	}
 
- 	.concha {
+ 	/*.concha {
  		max-width: 250px;
- 	}
+ 	}*/
 }
