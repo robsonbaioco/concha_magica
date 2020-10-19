@@ -51,6 +51,7 @@
 
 	<script src="js/libs/jquery.min.js"></script>
 	<script src="js/libs/wow.min.js"></script>
+	<script src="js/audio.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
