@@ -1,5 +1,5 @@
 
-	var answers = array(
+	var answers = [
 		'sim',
 		'não',
 		'tente novamente mais tarde',
@@ -14,6 +14,6 @@
 		'definitivamente não',
 		'com toda certeza!',
 
-	);
+	];
 	
 	

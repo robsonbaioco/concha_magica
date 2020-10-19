@@ -12,4 +12,11 @@ $(function() {
     new WOW({
         offset: 300
     }).init();
+
+    $( "form" ).submit(function( event ) {
+        event.preventDefault();
+        var answer = answers[Math.floor(answers.length * Math.random())];
+        console.log(answer);
+        $('.answer').text(answer);
+      });
 });
