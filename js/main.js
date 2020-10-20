@@ -15,10 +15,13 @@ $(function() {
 
     $( "form" ).submit(function( event ) {
         event.preventDefault();
-        var answer = answers[Math.floor(answers.length * Math.random())];
-        console.log(answer);
-        $('.answer').text(answer);
-      });
+
+        var keys = Object.keys(answers);
+        answer = answers[keys[keys.length * Math.random() << 0]];
+    
+        $('.answer').text(answer.texto);
+        playAudio(answer.audio);
+    });
 });
 
 // Puxando a corda da concha
